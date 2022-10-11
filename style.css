@@ -1,3 +1,8 @@
+/**
+* ! comment
+* ? comment
+**/
+
 *{
     margin: 0;
     padding: 0;
@@ -8,3 +13,37 @@ body
 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+/**
+* ! Navbar task here!!
+* ? comment
+**/
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #343A40;
+    color: white;
+    padding: 25px 60px;
+}
+
+.cart{
+    background-color: #fff;
+    color: #212529;
+    font-size: 35px;
+    padding: 5px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.cartAmount{
+    font-size: 16px;
+    background-color: red;
+    color :white;
+    position: absolute;
+    top: -15px;
+    right: 0;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+/* 20 min  */
