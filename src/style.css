@@ -13,6 +13,11 @@ body
 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+i{
+    cursor: pointer;
+}
+
 /**
 * ! Navbar task here!!
 * ? comment
