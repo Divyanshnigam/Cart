@@ -16,10 +16,10 @@ let shopItemData = [
 },
 {
     id:"d3",
-name:"T Shirt",
-price: 55,
-desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
-img: "images/img-3.jpg"
+    name:"T Shirt",
+    price: 55,
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    img: "images/img-3.jpg"
 },
 {
     id:"d4",

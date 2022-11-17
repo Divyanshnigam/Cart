@@ -18,9 +18,9 @@ let generateshop =()=> {
                     <h2>$ ${price}</h2>
                     <div class="buttons">
                         <i onclick="increment(${id})" class="bi bi-plus-lg"></i>
-                        <div id=${id} class="quantity"></div>
+                        <div id=${id} class="quantity">
                         ${search.item === undefined ? 0: search.item}</div>
-                        <i onclick="decrement(${id})" class="bi bi-dash-lg"></i>
+                        <i onclick="decrement(${id})"  class="bi bi-dash-lg"></i>
                     </div>
                 </div>
             </div>
@@ -46,7 +46,7 @@ let increment = (id) =>{
         search.item += 1;
     }
     localStorage.setItem("data",JSON.stringify(basket));
-    // console.log(basket);
+    // generateCartItem();
     update(selectedItem.id); 
 }
 let decrement = (id) =>{
@@ -60,7 +60,7 @@ let decrement = (id) =>{
     }
     
     
-    // console.log(basket); 
+    // generateCartItem();
     update(selectedItem.id);
     basket = basket.filter((x)=>x.item !== 0);
     localStorage.setItem("data",JSON.stringify(basket));
@@ -80,4 +80,4 @@ let calculation = ()=>{
 };
 
 calculation();
-// 2.21 // 
+// 2.50 // 
