@@ -45,9 +45,10 @@ let increment = (id) =>{
     else{
         search.item += 1;
     }
+    
+    update(selectedItem.id);
     localStorage.setItem("data",JSON.stringify(basket));
-    // generateCartItem();
-    update(selectedItem.id); 
+    // generateCartItem(); 
 }
 let decrement = (id) =>{
     let selectedItem = id;
@@ -68,7 +69,7 @@ let decrement = (id) =>{
 let update = (id) =>{
     let search = basket.find((x) => x.id === id);
 
-    // console.log(search.item);
+    // console.log(id);
     document.getElementById(id).innerHTML = search.item;
     calculation();
 };
